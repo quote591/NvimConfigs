@@ -18,8 +18,8 @@ vim.opt.colorcolumn = "80"
 vim.api.nvim_set_hl(0, "ColorColumn", {ctermbg = 0, bg="#333333"})
 
 -- Chars for invisible chars
--- vim.opt.listchars = { space = "", eol = "", tab= "" }
--- vim.opt.list = true
+vim.opt.listchars = { space = "·", eol = "⮐", tab= "⭾ " }
+vim.opt.list = true
 
 -- Set leader
 vim.g.mapleader = vim.keycode("<Space>")
