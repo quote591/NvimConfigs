@@ -8,5 +8,15 @@ Plug 'nvim-lua/plenary.nvim'							 " dependancy to telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' } " telescope search tool
 Plug 'neovim/nvim-lspconfig', { 'tag': 'v2.3.0' } " lsp
 
+Plug 'hrsh7th/cmp-nvim-lsp' " lsp-cmp (autocomplete)
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp' " / lsp-cmp
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip' " more lsp deps
+
+
 call plug#end()
 
