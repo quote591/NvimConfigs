@@ -79,13 +79,30 @@ vim.lsp.config["clangd"] = {
 	}, ]]--
 }
 
+local diagnostic_enabled = true;
+
+local function toggle_diagnostic()
+	diagnostic_enabled = not diagnostic_enabled
+end
+
 if vim.diagnostic.is_enabled() then
 	vim.opt.updatetime = 250
 	vim.cmd [[autocmd CursorHold, CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 end
 
+-- TODO sort this, out we can disable the lhs warning but not floating
+vim.api.nvim_create_autocmd({"CursorHold", "CursorHoldI"}, {
+	callback = function()
+		if diagnostic_enabled then
+			vim.diagnostic.open_float(nil, { focus = false })
+		end
+	end,
+})
+vim.keymap.set("n", "<leader>lx", toggle_diagnostic, { desc = "toggle_diagnostic floating" })
+
 
 vim.lsp.enable("clangd")
+
 
 
 
