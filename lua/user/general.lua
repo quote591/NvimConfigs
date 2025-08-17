@@ -14,13 +14,14 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
--- Visual line for code length
-vim.opt.colorcolumn = "80"
-vim.api.nvim_set_hl(0, "ColorColumn", {ctermbg = 0, bg="#333333"})
-vim.opt.cursorline = true
-
 -- Colorscheme
 vim.cmd.colorscheme("retrobox")
+
+-- Visual line for code length, set after colorscheme since it changes it
+vim.opt.colorcolumn = "80"
+vim.api.nvim_set_hl(0, "ColorColumn", {bg="#333333"})
+vim.opt.cursorline = true
+
 
 -- Chars for invisible chars
 vim.opt.listchars = { space = "·", eol = "⮐", tab= "⭾ "}
