@@ -27,4 +27,5 @@ vim.cmd("source " .. init_dir .. "/plugins.vim")
 require("plugins.telescope")
 require("plugins.lsp-cmp")
 require("plugins.lspconfig")
+require("plugins.nvim-tree")
 

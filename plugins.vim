@@ -17,6 +17,8 @@ Plug 'hrsh7th/nvim-cmp' " / lsp-cmp
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip' " more lsp deps
 
+Plug 'nvim-tree/nvim-web-devicons' " optional dep for sidebar
+Plug 'nvim-tree/nvim-tree.lua', { 'tag': 'v1.14.0' } " tree sidebar
 
 call plug#end()
 
