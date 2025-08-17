@@ -59,13 +59,18 @@ vim.lsp.config["clangd"] = {
 
 	-- root_markers, files etc that will determine the root dir of a project
 	root_markers= {
+		".git",
+		"compile_commands.json",
 		".clangd",
 		".clang-tidy",
 		".clang-format",
-		"compile_commands.json",
 		"compile_flags.txt",
 		"configure.ac",
-		".git"
+	},
+
+	-- Not entirely sure if this works
+	init_options = {
+		compilationDatabasePath = "",
 	},
 
 	capabilities = capabilities_lsp,
