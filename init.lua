@@ -28,4 +28,7 @@ require("plugins.telescope")
 require("plugins.lsp-cmp")
 require("plugins.lspconfig")
 require("plugins.nvim-tree")
+require("plugins.gitsigns")
+require("plugins.barbar")
+require("plugins.lualine")
 

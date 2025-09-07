@@ -29,3 +29,4 @@ vim.opt.list = true
 
 -- Set leader
 vim.g.mapleader = vim.keycode("<Space>")
+
