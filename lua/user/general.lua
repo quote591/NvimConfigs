@@ -24,8 +24,9 @@ vim.opt.cursorline = true
 
 
 -- Chars for invisible chars
-vim.opt.listchars = { space = "·", eol = "⮐", tab= "⭾ "}
+vim.opt.listchars = { space = "·", eol = "↵", tab= "⇥ "}
 vim.opt.list = true
 
 -- Set leader
 vim.g.mapleader = vim.keycode("<Space>")
+

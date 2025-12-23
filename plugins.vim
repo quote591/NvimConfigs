@@ -26,5 +26,10 @@ Plug 'rust-lang/rust-analyzer'
 Plug 'nvim-tree/nvim-web-devicons' " optional dep for sidebar
 Plug 'nvim-tree/nvim-tree.lua', { 'tag': 'v1.14.0' } " tree sidebar
 
+Plug 'lewis6991/gitsigns.nvim', " git status
+Plug 'romgrk/barbar.nvim' " top tabs
+
+Plug 'nvim-lualine/lualine.nvim' " status bar
+
 call plug#end()
 
