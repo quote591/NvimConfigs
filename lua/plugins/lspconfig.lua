@@ -84,6 +84,16 @@ vim.lsp.config["clangd"] = {
 	}, ]]--
 }
 
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
+    }
+  }
+})
+
 local diagnostic_enabled = true;
 
 local function toggle_diagnostic()
@@ -107,6 +117,7 @@ vim.keymap.set("n", "<leader>lx", toggle_diagnostic, { desc = "toggle_diagnostic
 
 
 vim.lsp.enable("clangd")
+vim.lsp.enable("rust_analyzer")
 
 
 

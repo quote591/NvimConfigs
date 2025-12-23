@@ -17,6 +17,12 @@ Plug 'hrsh7th/nvim-cmp' " / lsp-cmp
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip' " more lsp deps
 
+" C/C++
+"	pacman -S clangd
+" Rust
+"	pacman -S rust rust-analyzer
+Plug 'rust-lang/rust-analyzer'
+
 Plug 'nvim-tree/nvim-web-devicons' " optional dep for sidebar
 Plug 'nvim-tree/nvim-tree.lua', { 'tag': 'v1.14.0' } " tree sidebar
 
